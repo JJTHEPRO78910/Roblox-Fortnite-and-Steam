@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Roblox, Fortnite and Steam</title>
+    </head>
+    <body>
+        <p id="a1"> </p>
+        <p id="b2"> </p>
+        <p id="c5"> </p>
+        <script>
+            class student{
+                constructor(name, year){
+                    this.name=name;
+                    this.year=year;
+                }
+                age(){
+                    let date = new Date();
+
+                    return date.getFullYear() - this.year; 
+                }
+            }
+            Object1=new student("Roblox",2006);
+            Object2=new student("Fornite", 2017);
+            Object3=new student("Steam", 2003)
+            document.getElementById("a1").innerHTML="I am " + Object1.name +". I was born in "+ Object1.year+". And my age is "+Object1.age();
+            document.getElementById("b2").innerHTML="I am " + Object2.name +". I was born in "+ Object2.year+". And my age is "+Object2.age();
+            document.getElementById("c5").innerHTML="I am "+ Object3.name +". I was born in "+ Object2.year+". And my age is "+Object3.age();
+        </script>
+    </body>
+</html>
